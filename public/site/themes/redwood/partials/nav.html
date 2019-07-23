@@ -1,0 +1,31 @@
+<header class="header">
+    <nav class="navbar navbar-static-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="home" href="#/">
+                    <div class="icon icon_logo"></div>
+                </a>
+            </div>
+            <div class="navbar-nav-scroll">
+                <ul class="navbar-nav bd-navbar-nav flex-row">
+                    {{ nav from="/" include_home="true" scope="tag" }}
+                    <li class="nav-item">
+                        <a class="link-active links" href="{{ url }}">{{ tag:nav_title or title }}</a>
+                    </li>
+                    {{ /nav }}
+                </ul>
+            </div>
+            <div class="desktop-searchbox col-lg-3" style="height:65%;">
+                <form action="/search" method="GET">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Поиск..." aria-label="Search" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+

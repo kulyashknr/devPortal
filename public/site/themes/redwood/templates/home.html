@@ -1,0 +1,65 @@
+<section class="justify-content-center">
+    <div class="welcome-block" style="background-image: url({{background_img}});">
+        <div class="regular">
+            <header>
+                <h1 style="color: white">{{ title_text }}</h1>
+                {{ sub_title wrap="h2" }}
+            </header>
+            <article>
+                <div class="row" style="color: white">
+                    <div class="main-text">
+                        {{ content }}
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <button type="button" class="btn btn-primary payments-button btn-lg btn-block">Docs</button>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <button type="button" class="btn btn-primary payments-button btn-lg btn-block">API ref</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="container" align="center">
+        <div class="content">
+            <h3> {{ column_title }} </h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <span style="font-size: 80px; color: darkorange;">
+                        <i class="fas fa-briefcase"></i>
+                    </span>
+                    <h3> {{ column1_title }} </h3>
+                    <p> {{ column1_text }} </p>
+                </div>
+                <div class="col-lg-4">
+                    <span style="font-size: 80px; color: darkorange;">
+                        <i class="fas fa-bolt"></i>
+                    </span>
+                    <h3> {{ column2_title }} </h3>
+                    <p> {{ column2_text }} </p>
+                </div>
+                <div class="col-lg-4">
+                    <span style="font-size: 80px; color: darkorange;">
+                        <i class="fas fa-user-lock"></i>
+                    </span>
+                    <h3> {{ column3_title }} </h3>
+                    <p> {{ column3_text }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info-section">
+        <div class="container p-4">
+            <div class="row pb-4 info-section">
+                <div class="col-lg-8 pt-4" align="center">
+                    <h2>{{ info_title }}</h2>
+                    <p>{{ info_text }}</p>
+                    <button type="button" class="btn btn-primary payments-button btn-lg mt-3">Additional info</button>
+                </div>
+                <div class="col-lg-4 info-img" style="background-image: url({{info_img}});"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,48 @@
+sections:
+  main:
+    display: Main
+    fields:
+      content:
+        restrict_assets: false
+        type: redactor
+        display: Content
+      template:
+        type: template
+        display: Template
+        default: docs/article
+      bard_field:
+        buttons:
+          - h4
+          - bold
+          - italic
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+          - assets
+          - code
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        type: bard
+        display: TEXT
+        sets:
+          '':
+            display: Image
+            fields:
+              image:
+                container: main
+                folder: /
+                restrict: false
+                type: assets
+                display: Image
+taxonomies: true
+title: Article
+toc: true

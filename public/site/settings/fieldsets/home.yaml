@@ -1,0 +1,53 @@
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      background_img:
+        container: main
+        folder: img/home
+        restrict: false
+        type: assets
+        display: 'Background Image'
+      title_text:
+        type: text
+        display: 'Title Text'
+      content:
+        type: text
+        display: Content
+      column_title:
+        type: text
+        display: 'Column Title'
+      column1_title:
+        type: text
+        display: 'Column1 Title'
+      column1_text:
+        type: text
+        display: 'Column1 Text'
+      column2_title:
+        type: text
+        display: 'Column2 Title'
+      column2_text:
+        type: text
+        display: 'Column2 Text'
+      column3_title:
+        type: text
+        display: 'Column3 Title'
+      column3_text:
+        type: text
+        display: 'Column3 Text'
+      info_img:
+        restrict: false
+        type: assets
+        display: 'Info Img'
+        container: main
+        folder: img/home
+      info_title:
+        type: text
+        display: 'Info Title'
+      info_text:
+        type: text
+        display: 'Info Text'
+taxonomies: true
+title: Home
+create_title: home

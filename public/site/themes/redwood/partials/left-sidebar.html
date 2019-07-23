@@ -1,0 +1,15 @@
+ <div class="sidebar">
+     <ul class="nav-link list-unstyled">
+         {{ nav from="/documentation" max_depth="3" }}
+         <li class="article-links" style="{{ if current_url }} padding-bottom: 15px; {{/if}}">
+             <a class="link {{ if is_current  }} disabled {{/if}}" href="{{ url }}"
+                style="{{ if current_url }} font-weight: 600; font-size: 16px; {{/if}}
+                {{ if is_current  }}  color: rgb(0,169,255); cursor: default; pointer-events: none; {{ /if }}">{{ title }}</a>
+                 {{ if children }}
+             <ol style="list-style: none; padding-left: 20px;">{{ *recursive children* }}</ol>
+                 {{ /if }}
+         </li>
+         {{ /nav }}
+     </ul>
+ </div>
+
