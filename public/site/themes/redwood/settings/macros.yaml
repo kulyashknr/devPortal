@@ -6,3 +6,8 @@ summary:
     safe_truncate: 210
     ensure_right: ...
     widont: true
+context:
+    strip_tags: [img, a, p]
+    substr: 70:128
+    ensure_right: ...
+    widont: true

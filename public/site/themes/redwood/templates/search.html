@@ -1,42 +1,45 @@
+
 <section class="regular">
 	<header>
-		<h6>Результаты поиска</h6>
+		<h1><small>Результаты поиска</small></h1>
 		<form role="search" action="/search">
-			<input type="text" name="q" class="form-control giant search" value="{{ get:q }}" placeholder="Search">
+			<div class="input-group">
+				<input type="text" id="search-text" name="q" class="form-control" placeholder="Поиск..." value="{{ get:q }}" aria-label="Search" aria-describedby="button-addon2">
+			</div>
 		</form>
 	</header>
-	<article class="content">
 		{{ search:results }}
+	<article class="content">
 			{{ if no_results }}
 				Поиск не дал результатов. Повторите запрос.
-			{{ /if }}
-
-			<div class="block">
-				<a href="{{ url }}">
-
-					{{ if intro_image  }}
-						<img src="{{ glide src='{ intro_image }' square='140' fit='crop' }}" width="140" height="140" class="small-image">
-					{{ elseif hero_image  }}
-						<img src="{{ glide src='{ hero_image }' square='140' fit='crop' }}" width="140" height="140" class="small-image">
+			{{ else }}
+			<div class="search-result">
+				<strong class="article-title">{{ title }} </strong><a href="{{url}}">({{ site_url | substr:0:-1 }}{{url}})</a>
+				<div class="meta">
+					{{ if (date | days_ago) < 7 }}
+						{{ date | relative }}
+					{{ elseif (date | format:Y) == now | format:Y }}
+						{{ date format="M j" }}
+					{{ else }}
+						{{ date format="M j, Y" }}
 					{{ /if }}
-
-					<h3>{{ title }}</h3>
-
-					<p>{{ content strip_tags="img|a|p" safe_truncate="180|..." }}</p>
-
-					<code>{{ url }}</code>
-
-					<div class="meta">
-						{{ if (date | days_ago) < 7 }}
-							{{ date | relative }}
-						{{ elseif (date | format:Y) == now | format:Y }}
-							{{ date format="M j" }}
-						{{ else }}
-							{{ date format="M j, Y" }}
-						{{ /if }}
-					</div>
-				</a>
+				</div>
 			</div>
-		{{ /search:results }}
+			{{ /if }}
 	</article>
+		{{ /search:results }}
 </section>
+
+<script>
+	function f() {
+		var text = document.getElementById('search-text').value;
+		var re = /text/i;
+		console.log(document.getElementById('document-text').innerText);
+		var position = document.toString().indexOf(text);
+		console.log(position);
+		var start_pos = position - 100;
+		var end_pos = position + 100;
+		var str = document.toString().substring(start_pos, end_pos);
+		document.getElementById("context").innerHTML = text;
+	}
+</script>

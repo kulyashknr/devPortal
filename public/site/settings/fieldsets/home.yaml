@@ -9,6 +9,7 @@ sections:
         restrict: false
         type: assets
         display: 'Background Image'
+        max_files: 1
       title_text:
         type: text
         display: 'Title Text'
@@ -42,6 +43,7 @@ sections:
         display: 'Info Img'
         container: main
         folder: img/home
+        max_files: 1
       info_title:
         type: text
         display: 'Info Title'
