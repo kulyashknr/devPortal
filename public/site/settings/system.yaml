@@ -24,7 +24,12 @@ app_key: xajZG4MBCr4wxm68Prj74MHbRLmoEQXD
 redactor:
   -
     name: Standard
+    containe: img
     settings:
+      formatting:
+        - p
+        - blockquote
+        - h4
       buttons:
         - formatting
         - bold
@@ -33,13 +38,11 @@ redactor:
         - unorderedlist
         - orderedlist
         - html
-        - assets
-  -
-    name: Basic
-    settings:
-      buttons:
-        - bold
-        - italic
+        - image
+        - file
+        - alignment
+      imageUpload: img
+
 yaml_parser: symfony
 send_powered_by_header: true
 ensure_unique_ids: true

@@ -2,19 +2,97 @@
     {{ partial:mobile-toolbox}}
     <div class="content">
         <div class="row">
-            <div class="col-lg-2" style="border-right: 1px solid gainsboro" id="MainMenu">
+            <div class="col-lg-2" style="border-right: 1px solid gainsboro">
+                <div class="desktop-sidebar">
                 {{ partial:left-sidebar }}
+                </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <h1>
-                    <small>{{title}}</small>
+                    <small>{{ title }}</small>
                 </h1>
-                <article id="document-text">
-                    {{ content }}
+                <article>
+                    {{ bard_field }}
+                    {{ if type == "text" }}
+                    <div class="text">
+                        {{ text }}
+                    </div>
+                    {{ elseif type == "images" }}
+                    <figure style="text-align: center;">
+                        <img class="myImgs" src="{{ article_image }}" />
+                    </figure>
+                    <div id="myModal" class="modal">
+                        <span class="close" style="color: white">&times;</span>
+                        <img class="modal-content" id="img01">
+                    </div>
+                    {{ /if }}
+                    {{ /bard_field }}
                 </article>
             </div>
+            {{ if type == "subarticle"}}
+            <div class="col-lg-2 article-links">
+                <ul id="toc" class="list-unstyled" style="position: fixed; border-left: 1px solid gainsboro; padding-left: 15px;">
+                    <small>Содержание</small>
+                </ul>
+            </div>
+            {{ /if }}
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    var modal = document.getElementById("myModal");
+    var imgs = document.getElementsByClassName("myImgs");
+    var modalImg = document.getElementById("img01");
+    for (i=0;i<imgs.length;i++) {
+        imgs[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    }
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
+<script>
+    var TOC = document.getElementById('toc'),
+        headings = document.querySelectorAll('h4'),
+        parentLevel = 4,
+        cursorNode = TOC;
+    var j=1;
 
+    for (var i = 0, len = headings.length ; i < len ; ++i) {
+        var currentHeading = headings[i];
+        headings[i].setAttribute('id', j);
+        j=j+1;
+
+        var newLevel = parseInt(currentHeading.tagName.substr(1,1));
+        var diff = newLevel - parentLevel;
+        if (diff > 0) {
+            var containerLiNode = cursorNode.lastChild;
+            var ulNode = document.createElement('UL')
+            containerLiNode.appendChild(ulNode);
+            cursorNode = ulNode;
+            parentLevel = newLevel;
+        }
+        if (diff < 0) {
+            while (0 !== diff++) {
+                cursorNode = cursorNode.parentNode.parentNode;
+            }
+            parentLevel = newLevel;
+        }
+
+        var liNode = document.createElement('LI');
+        if (currentHeading.hasAttribute('id')) {
+            var link = document.createElement('A');
+            link.setAttribute('href', '#' + currentHeading.getAttribute('id'));
+            link.setAttribute('class', 'article-links');
+            link.appendChild(document.createTextNode(currentHeading.textContent))
+            liNode.appendChild(link);
+        } else {
+            liNode.appendChild(document.createTextNode(currentHeading.textContent));
+        }
+        cursorNode.appendChild(liNode);
+    }
+</script>
 

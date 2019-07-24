@@ -1,5 +1,16 @@
 ---
-template: docs/subarticle
+template: docs/article
+brad:
+  -
+    type: text
+    text: '<h4>Подзаголовок 1</h4><p>ьвцждсвцждсбцвбсэцжус</p><h4>Подзаголовок 2</h4>'
+  -
+    type: images
+    article_image: /assets/img/redwood-james-irvine-trail.jpg
+  -
+    type: text
+    text: '<p>всысысвысывс</p><p><br></p><h4>Конец</h4>'
+type: subarticle
 title: 'Еще одна статья'
 fieldset: article
 id: dfefa705-6e60-4433-a3d1-7d0a90d3ef34

@@ -2,14 +2,16 @@ sections:
   main:
     display: Main
     fields:
-      content:
-        restrict_assets: false
-        type: redactor
-        display: Content
       template:
-        type: template
-        display: Template
+        type: hidden
         default: docs/article
+      type:
+        options:
+          article: Article
+          subarticle: Subarticle
+        inline: false
+        type: radio
+        display: Type
       bard_field:
         buttons:
           - h4
@@ -21,7 +23,6 @@ sections:
           - quote
           - anchor
           - assets
-          - code
         style: sans
         spellcheck: true
         allow_source: true
@@ -31,18 +32,21 @@ sections:
         target_blank: false
         semantic_elements: false
         restrict_assets: false
-        type: bard
-        display: TEXT
         sets:
-          '':
-            display: Image
+          images:
+            display: Images
             fields:
-              image:
+              article_image:
                 container: main
-                folder: /
+                folder: img
                 restrict: false
+                max_files: 1
+                mode: grid
                 type: assets
-                display: Image
+                display: 'Article Image'
+        type: bard
+        display: Redactor
 taxonomies: true
 title: Article
 toc: true
+

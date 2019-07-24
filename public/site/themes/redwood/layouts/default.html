@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="{{ theme:css }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    <style type="text/css">
+        a.fancybox img {
+            border: none;{{SHADOW}}{{TRANSFORM1}}
+        } {{TRANSFORM2}}
+    </style>
 </head>
 
 <body class="section-{{ segment_1 or "home" }}">
@@ -23,18 +29,18 @@
 
     {{ template_content }}
 
-<footer class="footer container article-footer font-small pt-4">
-    <div class="container-fluid text-center text-md-left">
+<footer class="footer article-footer font-small pt-4 pb-4" style="border-top: 1px solid gainsboro;">
+    <div class="container text-center text-md-left">
         <div class="row">
-            <div class="col-lg-3 mt-3">
+            <div class="col-lg-2 mt-3">
                 <div class="footer-logo" style="margin: auto"></div>
             </div>
-            <hr class="clearfix w-100 d-md-none pb-3">
             <div class="col-lg-5 mb-md-0 mb-3">
                 <p class="text">Лицензия на проведение банковских и иных операций и
                     деятельности на рынке ценных бумаг № 1.2.47/230/38/1 от 8 ноября 2016 года
                     <br> © 2000—2019 АО «Народный Банк Казахстана»</p>
             </div>
+            <div class="col-lg-1"></div>
             <div class="col-lg-4 mb-md-0 mb-3">
                 <div class="social">
                     <a href="https://www.facebook.com/halykbank/">
