@@ -7,7 +7,7 @@
                 {{ partial:left-sidebar }}
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="{{ if type == "subarticle"}}col-lg-8{{else}}col-lg-9{{/if}}">
                 <h1>
                     <small>{{ title }}</small>
                 </h1>
@@ -31,9 +31,10 @@
             </div>
             {{ if type == "subarticle"}}
             <div class="col-lg-2 article-links">
-                <ul id="toc" class="list-unstyled" style="position: fixed; border-left: 1px solid gainsboro; padding-left: 15px;">
+                <ol id="toc" class="list-unstyled" style="position: fixed; border-left: 1px solid gainsboro;
+                    padding-left: 15px;">
                     <small>Содержание</small>
-                </ul>
+                </ol>
             </div>
             {{ /if }}
         </div>
@@ -56,7 +57,7 @@
 </script>
 <script>
     var TOC = document.getElementById('toc'),
-        headings = document.querySelectorAll('h4'),
+        headings = document.querySelectorAll('h4, h5'),
         parentLevel = 4,
         cursorNode = TOC;
     var j=1;
@@ -83,6 +84,7 @@
         }
 
         var liNode = document.createElement('LI');
+        liNode.setAttribute('style', 'list-style: none;');
         if (currentHeading.hasAttribute('id')) {
             var link = document.createElement('A');
             link.setAttribute('href', '#' + currentHeading.getAttribute('id'));

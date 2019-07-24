@@ -1,5 +1,10 @@
 ---
 template: docs/article
+type: subarticle
+bard_field:
+  -
+    type: text
+    text: '<h4>asdasdasd</h4><p>just a text sample text&nbsp;</p><h5>ddddd</h5><h6>ddd</h6><h4>qwdewdewc</h4>'
 brad:
   -
     type: text
@@ -10,7 +15,6 @@ brad:
   -
     type: text
     text: '<p>всысысвысывс</p><p><br></p><h4>Конец</h4>'
-type: subarticle
 title: 'Еще одна статья'
 fieldset: article
 id: dfefa705-6e60-4433-a3d1-7d0a90d3ef34
