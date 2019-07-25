@@ -1,15 +1,37 @@
- <div>
+<div>
      <ul class="nav-link list-unstyled">
-         {{ nav from="/documentation" max_depth="3" }}
+         {{ nav from=path max_depth="3" }}
          <li class="article-links" style="{{ if current_url }} padding-bottom: 15px; {{/if}}">
              <a class="link {{ if is_current  }} disabled {{/if}}" href="{{ url }}"
                 style="{{ if current_url }} font-weight: 600; font-size: 16px; {{/if}}
-                {{ if is_current  }}  color: rgb(0,169,255); cursor: default; pointer-events: none; {{ /if }}">{{ title }}</a>
+                {{ if is_current  }}  color: rgb(0,169,255); cursor: default; pointer-events: none; {{ /if }}">{{ title  }}</a>
                  {{ if children }}
              <ol style="list-style: none; padding-left: 20px;">{{ *recursive children* }}</ol>
                  {{ /if }}
          </li>
          {{ /nav }}
+         {{ current_url }}
+         {{ url }}
+         <p id="demo">vdsgsd</p>
      </ul>
+
+    <ul>
+        {{ nav from=path1 max_depth="3" }}
+        <li>
+            <a href="{{ url }}"{{ if is_current || is_parent }} class="on"{{ /if }}>{{ title }}</a>
+            {{ if children }}
+            <ul>{{ *recursive children* }}</ul>
+            {{ /if }}
+        </li>
+        {{ /nav }}
+    </ul>
  </div>
+<script>
+    var url = "{{ url }}";
+    var arr=url.split('/');
+    var path = url.toString().substring(0, 14);
+    var path1 = '/'+arr[0];
+    console.log(path1);
+    document.getElementById("demo").innerHTML = path1;
+</script>
 

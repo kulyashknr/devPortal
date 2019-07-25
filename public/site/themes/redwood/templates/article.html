@@ -1,4 +1,4 @@
-<section class="container-fluid">
+<section class="container-fluid" >
     {{ partial:mobile-toolbox}}
     <div class="content">
         <div class="row">
@@ -40,7 +40,7 @@
         </div>
     </div>
 </section>
-<script type="text/javascript">
+<script>
     var modal = document.getElementById("myModal");
     var imgs = document.getElementsByClassName("myImgs");
     var modalImg = document.getElementById("img01");
@@ -55,7 +55,7 @@
         modal.style.display = "none";
     }
 </script>
-<script>
+<script type="text/javascript">
     var TOC = document.getElementById('toc'),
         headings = document.querySelectorAll('h4, h5'),
         parentLevel = 4,
@@ -71,7 +71,7 @@
         var diff = newLevel - parentLevel;
         if (diff > 0) {
             var containerLiNode = cursorNode.lastChild;
-            var ulNode = document.createElement('UL')
+            var ulNode = document.createElement('UL');
             containerLiNode.appendChild(ulNode);
             cursorNode = ulNode;
             parentLevel = newLevel;
@@ -97,4 +97,5 @@
         cursorNode.appendChild(liNode);
     }
 </script>
+
 

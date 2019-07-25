@@ -8,26 +8,29 @@
 			</div>
 		</form>
 	</header>
-		{{ search:results }}
 	<article class="content">
+		{{ search:results limit="15" paginate="true" as="links" }}
 			{{ if no_results }}
 				Поиск не дал результатов. Повторите запрос.
 			{{ else }}
-			<div class="search-result">
-				<strong class="article-title">{{ title }} </strong><a href="{{url}}">({{ site_url | substr:0:-1 }}{{url}})</a>
-				<div class="meta">
-					{{ if (date | days_ago) < 7 }}
-						{{ date | relative }}
-					{{ elseif (date | format:Y) == now | format:Y }}
-						{{ date format="M j" }}
-					{{ else }}
-						{{ date format="M j, Y" }}
-					{{ /if }}
+				{{ links }}
+				<div class="search-result">
+					<strong class="article-title">{{ title }} </strong><a href="{{url}}">({{ site_url | substr:0:-1 }}{{url}})</a>
+					<div class="meta">
+						{{ if (date | days_ago) < 7 }}
+							{{ date | relative }}
+						{{ elseif (date | format:Y) == now | format:Y }}
+							{{ date format="M j" }}
+						{{ else }}
+							{{ date format="M j, Y" }}
+						{{ /if }}
+					</div>
 				</div>
-			</div>
+				{{ /links }}
 			{{ /if }}
-	</article>
+		{{ partial:pagination }}
 		{{ /search:results }}
+	</article>
 </section>
 
 <script>

@@ -4,7 +4,7 @@ sections:
     fields:
       template:
         type: hidden
-        default: docs/article
+        default: article
       type:
         options:
           article: Article

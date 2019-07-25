@@ -1,5 +1,5 @@
 ---
-template: docs/article
+template: article
 type: article
 bard_field:
   -

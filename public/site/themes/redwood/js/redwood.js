@@ -14,11 +14,7 @@
  */
 
 
-
-
-
 ;(function( $ ) {
-
 
     $.fn.collagePlus = function( options ) {
 
@@ -719,23 +715,9 @@ function collage() {
 	$('.gallery-images').collagePlus({
 		'fadeSpeed' : 300
     });
-}
+};
 
 ///custom scripts
 
-function zoom() {
-    var modal = document.getElementById("myModal");
-    var imgs = document.getElementsByClassName("myImgs");
-    var modalImg = document.getElementById("img01");
-    for (i=0;i<imgs.length;i++) {
-        imgs[i].onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-    }
-    var span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-        modal.style.display = "none";
-}
 
 
