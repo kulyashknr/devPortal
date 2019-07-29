@@ -3,32 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ab59ac1d-7164-4c8d-a71f-6404f371dea9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/1.priyom-platezha-1/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/1.priyom-platezha-1/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/1.priyom-platezha/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/1.priyom-platezha/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/1.documentation/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/content/pages/1.documentation/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/2.blog/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/3.gallery/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/content/pages/5.contact/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/content/pages/5.contact/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/settings/fieldsets/article.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/settings/fieldsets/article.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/settings/fieldsets/documentation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/settings/fieldsets/gallery.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/settings/fieldsets/things.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/content/pages/3.api-ref/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/content/pages/3.api-ref/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/js/redwood.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/js/redwood.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/partials/article-footer.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/partials/left-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/partials/left-sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/partials/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/partials/pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/partials/post-meta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/docs/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/templates/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/docs/docs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/feeds/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/feeds/things.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/thing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/things.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/themes/redwood/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/themes/redwood/templates/home.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,42 +20,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css">
+        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="942">
-              <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+            <state relative-caret-position="525">
+              <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/js/redwood.js">
+        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="192">
+              <caret line="343" column="16" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/site/content/pages/3.api-ref/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/site/content/globals/global.yaml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/site/content/taxonomies/tags.yaml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/local/storage/search/default.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -93,32 +81,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/pagination.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-              <folding>
-                <element signature="e#203#210#1" expanded="true" />
-                <element signature="e#683#690#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/left-sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
@@ -129,13 +95,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/layouts/default.html">
+        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/page.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="234">
+              <caret line="16" column="142" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
               <folding>
-                <element signature="n#style#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,9 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>container</find>
-      <find>link</find>
-      <find>hover</find>
       <find>border</find>
       <find>searc</find>
       <find>conten</find>
@@ -182,6 +153,9 @@
       <find>myimg</find>
       <find>article</find>
       <find>footer</find>
+      <find>img</find>
+      <find>nav-item</find>
+      <find>tab</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/site/content/pages/6.docs/index.md" />
-        <option value="$PROJECT_DIR$/public/site/content/pages/1.section/index.md" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/section.html" />
         <option value="$PROJECT_DIR$/public/site/content/globals/global.yaml" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/meta.yaml" />
@@ -222,7 +194,6 @@
         <option value="$PROJECT_DIR$/public/site/themes/redwood/partials/search-result.html" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/settings/macros.yaml" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/partials/nav.html" />
-        <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/home.html" />
         <option value="$PROJECT_DIR$/public/site/content/assets/main.yaml" />
         <option value="$PROJECT_DIR$/public/site/settings/system.yaml" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/docs/subarticle.html" />
@@ -233,21 +204,23 @@
         <option value="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/1.priyom-platezha/index.md" />
         <option value="$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/1.priyom-platezha-1/index.md" />
         <option value="$PROJECT_DIR$/public/site/settings/fieldsets/article.yaml" />
-        <option value="$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/search.html" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/partials/pagination.html" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/contact.html" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/layouts/default.html" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/js/redwood.js" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/article.html" />
+        <option value="$PROJECT_DIR$/public/site/content/pages/3.api-ref/index.md" />
+        <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/home.html" />
         <option value="$PROJECT_DIR$/public/site/themes/redwood/partials/left-sidebar.html" />
+        <option value="$PROJECT_DIR$/public/site/themes/redwood/templates/api.html" />
+        <option value="$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="691" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -257,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,6 +248,30 @@
               <item name="statamic" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statamic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statamic" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statamic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statamic" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statamic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statamic" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="3.api-ref" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="statamic" type="b2602c69:ProjectViewProjectNode" />
@@ -330,7 +328,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,15 +385,17 @@
       <workItem from="1563525469831" duration="13084000" />
       <workItem from="1563783523994" duration="7019000" />
       <workItem from="1563857604846" duration="1183000" />
-      <workItem from="1563859279293" duration="40556000" />
+      <workItem from="1563859279293" duration="52437000" />
+      <workItem from="1564211407401" duration="109000" />
+      <workItem from="1564372772016" duration="429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198771000" />
+    <option name="totallyTimeSpent" value="211190000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2279587" />
@@ -441,32 +440,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/statamic/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/local/cache/remember_me.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/statamic/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38745">
-          <caret line="2583" column="51" selection-start-line="2583" selection-start-column="43" selection-end-line="2583" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/statamic/settings/defaults/cp.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/statamic/settings/fieldsets/cp.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/settings/cp.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -505,16 +478,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/post-meta.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/search-result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/post-meta.html" />
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/search-result.html" />
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/settings/macros.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -533,20 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="13" column="126" selection-start-line="13" selection-start-column="126" selection-end-line="13" selection-end-column="126" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -586,32 +537,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/settings/fieldsets/gallery.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/display-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#figure#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#504#511#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/docs/subarticle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/settings/fieldsets/gallery.yaml" />
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/display-content.html" />
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/docs/subarticle.html" />
     <entry file="file://$PROJECT_DIR$/public/site/settings/fieldsets/long_form.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -619,43 +547,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/settings/fieldsets/documentation.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/settings/fieldsets/documentation.yaml" />
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/blog/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/3.kkl/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/3.kkl/index.md" />
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/blog/taxonomies.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/article-footer.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/article-footer.html" />
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/blog/post.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/docs/docs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/docs/docs.html" />
     <entry file="file://$PROJECT_DIR$/public/site/content/pages/1.documentation/1.biznes-keis/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -696,25 +600,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/content/pages/2.blog/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/content/pages/2.blog/index.md" />
     <entry file="file://$PROJECT_DIR$/public/site/settings/fieldsets/article.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -725,9 +615,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/feeds/blog.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/feeds/blog.html" />
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -749,33 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/js/redwood.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="942">
-          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="145" selection-start-line="20" selection-start-column="145" selection-end-line="20" selection-end-column="145" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
@@ -787,14 +648,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/js/redwood.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/api.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/css/redwood.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="343" column="16" selection-start-line="343" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/content/pages/3.api-ref/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/content/globals/global.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/content/taxonomies/tags.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/local/storage/search/default.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="145" selection-start-line="20" selection-start-column="145" selection-end-line="20" selection-end-column="145" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/partials/left-sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ol#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/site/themes/redwood/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="142" selection-start-line="16" selection-start-column="142" selection-end-line="16" selection-end-column="142" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

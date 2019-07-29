@@ -1,0 +1,102 @@
+<section class="container-fluid" >
+    {{ partial:mobile-toolbox}}
+    <div class="content">
+        <div class="row">
+            <div class="col-lg-2" style="border-right: 1px solid gainsboro">
+                <div class="desktop-sidebar">
+                    {{ partial:left-sidebar }}
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <h1>
+                    <small>{{ title }}</small>
+                </h1>
+                <code>[ Base URL: petstore.swagger.io/v2 ]</code>
+                <p>This is a sample server Petstore server. You can find out more about Swagger at http://swagger.io or on
+                    irc.freenode.net, #swagger. For this sample, you can use the api key special-key to test the
+                    authorization filters.</p>
+                <a href="/documentation">Read Documentation</a>
+
+                <div class="pt-2" id="accordion">
+                    <div class="card" id="headingOne">
+                        <div class="card-header">
+                            <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h5 class="mb-0">
+                                <div class="row dropdown-method">
+                                    <div class="api-method col-lg-2">delete</div>
+                                    <div class="dropdown-info row col-lg-10">
+                                        <div class="api-path">/pets</div>
+                                        <div class="api-description">Add a new pet to the store</div>
+                                    </div>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body row">
+                                <div class="col-lg-7" style="overflow-x: scroll;">
+                                    <div class="col-name">Parameters</div>
+                                    <table class="table table-striped mt-3">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Default</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="parameter-name">body<span class="badge badge-secondary">required</span></div>
+                                                <div class="parameter-type">string</div>
+                                                <div class="parameter-in">(query)</div>
+                                            </th>
+                                            <td>2019-07-03T00:00:00</td>
+                                            <td>Status values that need to be considered for filter</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="col-name">Responses</div>
+                                    <div class="response mt-3">
+                                        <ul class="nav nav-tabs">
+                                            <li class="tab nav-item">
+                                                <a class="nav-link tab active" data-toggle="tab" href="#home">200</a>
+                                            </li>
+                                            <li class="tab nav-item">
+                                                <a class="nav-link tab" data-toggle="tab" href="#menu1">404</a>
+                                            </li>
+                                            <li class="tab nav-item">
+                                                <a class="nav-link tab" data-toggle="tab" href="#menu2">500</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="home" class="container tab-pane active"><br>
+                                                <div><p>{</p>
+                                                    <p>"id": 98768,</p>
+                                                    <p>"name": "Goot Doggie",</p>
+                                                    <p>"photoUrls": ["https://media.karousell.com/media/photos/products/2017/09/14/doggi_door_stopper_1505372529_5cdd1eba0"],</p>
+                                                    <p>"tags": [],</p>
+                                                    <p>"status": "available"</p>
+                                                    }</div>
+                                            </div>
+                                            <div id="menu1" class="container tab-pane"><br>
+                                                <h3>Menu 1</h3>
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                            <div id="menu2" class="container tab-pane"><br>
+                                                <h3>Menu 2</h3>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
