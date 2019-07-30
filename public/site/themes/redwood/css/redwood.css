@@ -375,6 +375,10 @@ active a {
   text-align: center;
 }
 
+.parameter-name {
+  font-weight: bold;
+}
+
 .parameter-type {
   font-family: monospace !important;
   font-weight: 600 !important;
@@ -384,11 +388,6 @@ active a {
   font-family: monospace !important;
   font-style: italic !important;
   color: grey !important;
-}
-
-.parameter-required {
-  color: red;
-  font-size: 12px;
 }
 
 .tab {

@@ -1,3 +1,6 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" async="async"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
 <section class="container-fluid" >
     {{ partial:mobile-toolbox}}
     <div class="content">
@@ -20,21 +23,21 @@
                 <div class="pt-2" id="accordion">
                     <div class="card" id="headingOne">
                         <div class="card-header">
-                            <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-block">
                             <h5 class="mb-0">
-                                <div class="row dropdown-method">
+                                <div class="row">
                                     <div class="api-method col-lg-2">delete</div>
                                     <div class="dropdown-info row col-lg-10">
-                                        <div class="api-path">/pets</div>
-                                        <div class="api-description">Add a new pet to the store</div>
+                                        <div class="api-path"></div>
+                                        <div class="api-description"></div>
                                     </div>
                                 </div>
                             </h5>
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div>
                             <div class="card-body row">
                                 <div class="col-lg-7" style="overflow-x: scroll;">
-                                    <div class="col-name">Parameters</div>
+                                    <div class="parameters col-name">Parameters</div>
                                     <table class="table table-striped mt-3">
                                         <thead>
                                         <tr>
@@ -43,16 +46,17 @@
                                             <th scope="col">Description</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
-                                        <tr>
+                                        <tbody id="table-body">
+                                        <!--<tr>
                                             <th scope="row">
-                                                <div class="parameter-name">body<span class="badge badge-secondary">required</span></div>
-                                                <div class="parameter-type">string</div>
-                                                <div class="parameter-in">(query)</div>
+                                                &lt;!&ndash;<div class="parameter-name"></div>
+                                                <span class="parameter-required badge badge-secondary"></span>
+                                                <div class="parameter-type"></div>
+                                                <div class="parameter-in"></div>&ndash;&gt;
                                             </th>
-                                            <td>2019-07-03T00:00:00</td>
-                                            <td>Status values that need to be considered for filter</td>
-                                        </tr>
+                                           &lt;!&ndash; <td class="parameter-default"></td>
+                                            <td class="parameter-description"></td>&ndash;&gt;
+                                        </tr>-->
                                         </tbody>
                                     </table>
                                 </div>
@@ -100,3 +104,67 @@
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+        var json = (function() {
+            var json = null;
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': "/sample.json",
+                'dataType': "json",
+                'success': function (data) {
+                    json = data;
+                }
+            });
+            return json;
+        })();
+
+
+        var doRequest = function() {
+            const data = json;
+            console.log(Object.keys(data.parameters).length);
+
+            for (let i=0; i<Object.keys(data.parameters).length; i++) {
+                var element = document.getElementById('table-body');
+                var newTr = element.insertRow();
+
+                var newTh = newTr.insertCell();
+                newTh.setAttribute('scope', 'row');
+
+                var newName = document.createElement('div');
+                newTh.appendChild(newName);
+                newName.setAttribute('class', 'parameter-name');
+                newName.innerText = data.parameters[i].name;
+
+                var newRequired = document.createElement('div');
+                newTh.appendChild(newRequired);
+                newRequired.setAttribute('class', 'parameter-required badge badge-secondary');
+                newRequired.innerText = data.parameters[i].required;
+
+                var newType = document.createElement('div');
+                newTh.appendChild(newType);
+                newType.setAttribute('class', 'parameter-type');
+                newType.innerText = data.parameters[i].type;
+
+                var newIn = document.createElement('div');
+                newTh.appendChild(newIn);
+                newIn.setAttribute('class', 'parameter-in');
+                newIn.innerText = data.parameters[i].in;
+
+                var newDefault = newTr.insertCell();
+                newDefault.setAttribute('class', 'parameter-default');
+                newDefault.innerText = data.parameters[i].default;
+
+                var newDesc = newTr.insertCell();
+                newDesc.setAttribute('class', 'parameter-description');
+                newDesc.innerText = data.parameters[i].description;
+            }
+        };
+
+
+    (function() {
+        doRequest();
+    })();
+
+</script>

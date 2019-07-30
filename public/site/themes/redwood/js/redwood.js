@@ -13,7 +13,6 @@
  *
  */
 
-
 ;(function( $ ) {
 
     $.fn.collagePlus = function( options ) {
@@ -718,6 +717,9 @@ function collage() {
 };
 
 ///custom scripts
+
+
+
 
 
 
