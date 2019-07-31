@@ -46,18 +46,7 @@
                                             <th scope="col">Description</th>
                                         </tr>
                                         </thead>
-                                        <tbody id="table-body">
-                                        <!--<tr>
-                                            <th scope="row">
-                                                &lt;!&ndash;<div class="parameter-name"></div>
-                                                <span class="parameter-required badge badge-secondary"></span>
-                                                <div class="parameter-type"></div>
-                                                <div class="parameter-in"></div>&ndash;&gt;
-                                            </th>
-                                           &lt;!&ndash; <td class="parameter-default"></td>
-                                            <td class="parameter-description"></td>&ndash;&gt;
-                                        </tr>-->
-                                        </tbody>
+                                        <tbody id="table-body"></tbody>
                                     </table>
                                 </div>
                                 <div class="col-lg-5">
@@ -120,10 +109,9 @@
             return json;
         })();
 
-
-        var doRequest = function() {
+        var fillTableFromJSON = function() {
             const data = json;
-            console.log(Object.keys(data.parameters).length);
+            /*console.log(Object.keys(data.parameters).length);*/
 
             for (let i=0; i<Object.keys(data.parameters).length; i++) {
                 var element = document.getElementById('table-body');
@@ -153,18 +141,48 @@
                 newIn.innerText = data.parameters[i].in;
 
                 var newDefault = newTr.insertCell();
-                newDefault.setAttribute('class', 'parameter-default');
                 newDefault.innerText = data.parameters[i].default;
 
                 var newDesc = newTr.insertCell();
-                newDesc.setAttribute('class', 'parameter-description');
                 newDesc.innerText = data.parameters[i].description;
             }
         };
 
 
+        /*var universalFunction = function () {
+            const data = json;
+
+            var element = document.getElementsByClassName('parameters');
+            var newTable = document.createElement('table');
+            element[0].appendChild(newTable);
+            newTable.setAttribute('class', 'table table-striped mt-3');
+            var newThead = newTable.createTHead();
+            var newTr = newThead.insertRow();
+
+            for (var key in data.parameters[0]) {
+                var newTh = newTr.insertCell();
+                newTh.setAttribute('scope', 'row');
+                newTh.innerText = key;
+            }
+
+            var newTBody = newTable.createTBody();
+
+            for (let i = 0; i < Object.values(data.parameters[0]).length; i++) {
+                var newRow = newTBody.insertRow();
+                    console.log(data.parameters[i]);
+                    for (var property in data.parameters[0]) {
+                        var newCell = newRow.insertCell();
+                        newCell.setAttribute('scope', 'row');
+                        newCell.innerText = data.parameters[i][property];
+                    }
+
+                }
+
+        }*/
+
+
     (function() {
-        doRequest();
+        fillTableFromJSON();
     })();
 
 </script>
