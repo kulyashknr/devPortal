@@ -38,7 +38,7 @@
                             <div class="card-body row">
                                 <div class="col-lg-7" style="overflow-x: scroll;">
                                     <div class="parameters col-name">Parameters</div>
-                                    <table class="table table-striped mt-3">
+                                   <!-- <table class="table table-striped mt-3">
                                         <thead>
                                         <tr>
                                             <th scope="col">Name</th>
@@ -47,7 +47,7 @@
                                         </tr>
                                         </thead>
                                         <tbody id="table-body"></tbody>
-                                    </table>
+                                    </table>-->
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="col-name">Responses</div>
@@ -109,9 +109,9 @@
             return json;
         })();
 
-        var fillTableFromJSON = function() {
+ /*       var fillTableFromJSON = function() {
             const data = json;
-            /*console.log(Object.keys(data.parameters).length);*/
+            /!*console.log(Object.keys(data.parameters).length);*!/
 
             for (let i=0; i<Object.keys(data.parameters).length; i++) {
                 var element = document.getElementById('table-body');
@@ -146,10 +146,10 @@
                 var newDesc = newTr.insertCell();
                 newDesc.innerText = data.parameters[i].description;
             }
-        };
+        };*/
 
 
-        /*var universalFunction = function () {
+        var universalFunction = function () {
             const data = json;
 
             var element = document.getElementsByClassName('parameters');
@@ -169,20 +169,19 @@
 
             for (let i = 0; i < Object.values(data.parameters[0]).length; i++) {
                 var newRow = newTBody.insertRow();
-                    console.log(data.parameters[i]);
                     for (var property in data.parameters[0]) {
                         var newCell = newRow.insertCell();
                         newCell.setAttribute('scope', 'row');
                         newCell.innerText = data.parameters[i][property];
                     }
 
-                }
+            }
 
-        }*/
+        }
 
 
     (function() {
-        fillTableFromJSON();
-    })();
+        universalFunction();
+    });
 
 </script>
